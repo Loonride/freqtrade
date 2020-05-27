@@ -5,8 +5,8 @@ After=network.target
 [Service]
 # Set WorkingDirectory and ExecStart to your file paths accordingly
 # NOTE: %h will be resolved to /home/<username>
-WorkingDirectory=%h/freqtrade
-ExecStart=/usr/bin/freqtrade trade
+WorkingDirectory=/root/freqtrade
+ExecStart=/root/freqtrade/.env/bin/freqtrade trade -c data/main-config.json -c user_data/secrets-config.json
 Restart=on-failure
 
 [Install]
