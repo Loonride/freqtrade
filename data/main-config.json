@@ -82,5 +82,7 @@
     "forcebuy_enable": false,
     "internals": {
         "process_throttle_secs": 5
-    }
+    },
+    "strategy": "SampleStrategy",
+    "strategy_path": "../freqtrade-strategies"
 }
