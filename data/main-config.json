@@ -4,30 +4,10 @@
     "stake_amount": 100.00,
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "ticker_interval": "1m",
     "dry_run": true,
     "unfilledtimeout": {
         "buy": 10,
         "sell": 30
-    },
-    "bid_strategy": {
-        "price_side": "bid",
-        "ask_last_balance": 0.0,
-        "use_order_book": false,
-        "order_book_top": 1,
-        "check_depth_of_market": {
-            "enabled": false,
-            "bids_to_ask_delta": 1
-        }
-    },
-    "ask_strategy": {
-        "price_side": "ask",
-        "use_order_book": false,
-        "order_book_min": 1,
-        "order_book_max": 1,
-        "use_sell_signal": true,
-        "sell_profit_only": false,
-        "ignore_roi_if_buy_signal": false
     },
     "exchange": {
         "name": "binanceus",
@@ -39,7 +19,7 @@
             "rateLimit": 200
         },
         "pair_whitelist": [
-            "BTC/USDT"
+            "BCH/USDT"
         ],
         "pair_blacklist": [
             "BNB/BTC",
@@ -83,6 +63,6 @@
     "internals": {
         "process_throttle_secs": 5
     },
-    "strategy": "SampleStrategy",
+    "strategy": "EMASkipPump",
     "strategy_path": "../freqtrade-strategies"
 }

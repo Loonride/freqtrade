@@ -1,0 +1,6 @@
+CCIStrategy
+EMASkipPump x x
+Low_BB
+ReinforcedQuickie x
+
+Scalp? x x
